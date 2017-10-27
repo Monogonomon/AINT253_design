@@ -23,6 +23,6 @@ public class CharController : MonoBehaviour {
 
         //If esc, turn mouse back on
         if (Input.GetKeyDown("escape"))
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
 	}
 }
