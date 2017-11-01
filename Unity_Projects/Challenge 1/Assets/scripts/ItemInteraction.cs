@@ -94,7 +94,7 @@ public class ItemInteraction : MonoBehaviour {
         if (_postitHeld == true)
         {
             _keypadAnim.Play("1337", -1);
-            _doorAnim.Play("Take 001", -1);
+            _doorAnim.Play("openDoor", -1);
         }
         else if (_postitHeld == false)
         {
