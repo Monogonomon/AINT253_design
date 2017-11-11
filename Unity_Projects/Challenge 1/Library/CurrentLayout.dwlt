@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -68,10 +68,10 @@ MonoBehaviour:
     y: 0
     width: 331
     height: 947
-  m_MinSize: {x: 232, y: 471}
-  m_MaxSize: {x: 10002, y: 14021}
+  m_MinSize: {x: 232, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 78
+  controlID: 79
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -115,8 +115,8 @@ MonoBehaviour:
     y: 0
     width: 331
     height: 518
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 471}
-  m_MaxSize: {x: 18008, y: 14021}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 119
+  controlID: 122
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,11 +234,11 @@ MonoBehaviour:
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 15}
+  - {fileID: 11}
   - {fileID: 14}
   - {fileID: 12}
-  - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 3
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,10 +390,10 @@ MonoBehaviour:
     width: 329
     height: 497
   m_TreeViewState:
-    scrollPos: {x: 0, y: 48}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff00000000ba280000fa280000042a0000782a0000
+    m_ExpandedIDs: a46cf8ff1afcffff00000000202900006229000090290000d42900004e2b0000e02b0000062c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -448,9 +448,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -19.64685, y: -86.376175, z: -15.101736}
+    m_Target: {x: 6.500761, y: -92.86441, z: -74.55209}
     speed: 2
-    m_Value: {x: -19.64685, y: -86.376175, z: -15.101736}
+    m_Value: {x: 6.500761, y: -92.86441, z: -74.55209}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -473,13 +473,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.3172121, y: -0.6750925, z: 0.40496492, w: 0.52880067}
+    m_Target: {x: -0.06948416, y: 0.8452925, z: -0.51746523, w: -0.11350028}
     speed: 2
-    m_Value: {x: 0.3172121, y: -0.6750925, z: 0.40496492, w: 0.52880067}
+    m_Value: {x: -0.06948416, y: 0.8452925, z: -0.51746523, w: -0.11350028}
   m_Size:
-    m_Target: 147.73279
+    m_Target: 131.95164
     speed: 2
-    m_Value: 147.73279
+    m_Value: 131.95164
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -554,20 +554,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/prefabs
+    - Assets/scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/prefabs
+  - Assets/scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\02_Documents\GitHub\AINT253_design\Unity_Projects\Challenge
     1
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 25}
-    m_SelectedIDs: 4c270000
-    m_LastClickedID: 10060
-    m_ExpandedIDs: 000000001426000074260000c827000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 73}
+    m_SelectedIDs: 70260000
+    m_LastClickedID: 9840
+    m_ExpandedIDs: 00000000142600007e2600002c28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001426000074260000c8270000
+    m_ExpandedIDs: 00000000142600007e2600002c280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -626,18 +626,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: ec2400001c2500009e24000028250000422b000010250000462600009e2a0000f02a000000000000a0260000c82700007a260000d8260000322700002a260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: models
+      m_OriginalName: models
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10284
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
@@ -647,7 +647,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 115}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 141
 --- !u!114 &17
@@ -674,7 +674,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 610
-    width: 293
+    width: 329
     height: 408
 --- !u!114 &18
 MonoBehaviour:
