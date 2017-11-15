@@ -7,6 +7,7 @@ public class ItemInteraction : MonoBehaviour {
 
     private GameObject _keyCard, _postItNote;
     private GameObject _HELDKeycard;
+    private AudioSource _MainDoor;
     private bool _keycardHeld = false;
     private bool _postitHeld = false;
 
@@ -15,6 +16,8 @@ public class ItemInteraction : MonoBehaviour {
     public Animator _gateAnim;
     public Animator _doorAnim;
     public Animator _keypadAnim;
+
+    private string _Object;
 
     //Uses raycast to find item hit on keypress
     void Interaction()
@@ -40,6 +43,8 @@ public class ItemInteraction : MonoBehaviour {
     //Check if any interactable items have been hit by raycast
     void KeyItems(string item)
     {
+        _Object = item;
+
         //keycard item
         if (item == _keyCard.name)
         {
@@ -63,7 +68,13 @@ public class ItemInteraction : MonoBehaviour {
         {
             DoorCheck();
             FadeOut();
-        }
+        }        
+    }
+
+    void PlayAudio()
+    {
+        AudioSource sound = GameObject.Find(_Object).GetComponent<AudioSource>();
+        sound.Play();
     }
 
     //START INTERACTIONS
@@ -74,6 +85,7 @@ public class ItemInteraction : MonoBehaviour {
         KeycardToggle();
 
         _thoughtText.text = "This must be for the gate";
+        PlayAudio();
     }
 
     //Interact with the gate
@@ -85,6 +97,7 @@ public class ItemInteraction : MonoBehaviour {
             _gateAnim.Play("Take 001", -1);
 
             _thoughtText.text = "Looks like it worked";
+            PlayAudio();
         }
         else if (_keycardHeld == false)
         {
@@ -111,7 +124,8 @@ public class ItemInteraction : MonoBehaviour {
             _keypadAnim.Play("1337", -1);
             _doorAnim.Play("openDoor", -1);
 
-            _thoughtText.text = "It worked, the door opened";
+            _thoughtText.text = "It worked, the door opened";           
+            _MainDoor.Play();
         }
         else if (_postitHeld == false)
         {
@@ -120,6 +134,7 @@ public class ItemInteraction : MonoBehaviour {
 
             _thoughtText.text = "I don't know the code...";
         }
+        PlayAudio();
     }
     //END
 
@@ -152,6 +167,8 @@ public class ItemInteraction : MonoBehaviour {
         _keyCard = GameObject.Find("keycard");
         _postItNote = GameObject.Find("post_It");
         _HELDKeycard = GameObject.Find("HELDkeycard");
+
+        _MainDoor = GameObject.Find("main_Door").GetComponent<AudioSource>();
 
         _thoughtText = GameObject.Find("ThoughtText").GetComponent<Text>();
 
